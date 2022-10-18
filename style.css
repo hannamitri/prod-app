@@ -50,12 +50,12 @@ ul {
 
 #landing {
   min-height: calc(100vh - 88px);
-  padding-top: 64px;
+  padding-top: 24px;
 }
 
 .nav {
   height: 88px;
-  box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.11);
   background-color: white;
 }
 
@@ -226,6 +226,10 @@ ul {
 }
 
 @media (max-width: 1000px) {
+  #landing {
+    padding-top: 0px;
+  }
+
   .button {
     height: 48px;
     font-size: 14px;
@@ -248,10 +252,6 @@ ul {
 }
 
 @media (max-width: 568px) {
-  #landing {
-    padding-top: 0px;
-  }
-
   .contact__button {
     display: none;
   }
