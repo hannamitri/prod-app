@@ -21,7 +21,7 @@ ul {
   align-items: center;
   padding: 0 16px;
   border-radius: 4px;
-  height: 54px;
+  height: 48px;
   transition: opacity 300ms;
 }
 
@@ -230,7 +230,6 @@ ul {
   }
 
   .button {
-    height: 48px;
     font-size: 14px;
   }
 
