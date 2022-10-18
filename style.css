@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+ul {
+  list-style: none;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  border-radius: 4px;
+  height: 54px;
+  transition: opacity 300ms;
+}
+
+.button:active {
+  transform: translateY(1px);
+}
+
+.button:hover {
+  opacity: 0.65;
+}
+
+.row {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.container {
+  padding: 32px 0;
+}
+
+.body__wrapper {
+  background-color: #f5f5f5;
+}
+
+#landing {
+  min-height: calc(100vh - 88px);
+  padding-top: 64px;
+}
+
+.nav {
+  height: 88px;
+  box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.08);
+  background-color: white;
+}
+
+.nav__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+  padding: 0 24px;
+}
+
+.nav__button--wrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo__mask {
+  max-width: 114px;
+}
+
+.logo {
+  width: 100%;
+}
+
+.cta__button {
+  background-color: black;
+  color: white;
+}
+
+.contact__button {
+  background-color: #f6f5f9;
+  color: #242424;
+  padding: 0 32px;
+  font-weight: 600;
+  transition: background-color 300ms;
+}
+
+.contact__button:hover {
+  opacity: 1;
+  background-color: #ebebeb;
+}
+
+/* landing */
+.landing__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.landing__left {
+  width: 100%;
+  max-width: 480px;
+}
+
+.landing__right {
+  width: 100%;
+}
+
+.landing__img {
+  width: 100%;
+}
+
+.landing__title {
+  color: #242424;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px;
+  margin-bottom: 32px;
+}
+
+.landing__title span {
+  background-color: #cef4e1;
+  padding: 0 16px;
+  border-radius: 4px;
+}
+
+.landing__list--wrapper {
+  margin-bottom: 32px;
+}
+
+.landing__list {
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.landing__list--text {
+  color: #424242;
+}
+
+.landing__list--text b {
+  font-weight: 600;
+}
+
+.landing__check--mask {
+  display: flex;
+  margin-right: 12px;
+}
+
+.landing__check {
+  width: 100%;
+}
+
+.landing__button--wrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.landing__button {
+  background-color: black;
+  color: white;
+  border-radius: 8px;
+  height: 80px;
+  gap: 12px;
+  padding: 0 24px;
+}
+
+.landing__button--img-mask {
+  display: flex;
+}
+
+.landing__button--text-top {
+  font-size: 12px;
+}
+
+.landing__button--text-bottom {
+  font-size: 26px;
+  line-height: 1;
+}
+
+.landing__bottom--wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.landing__bottom--img-mask {
+  display: flex;
+  margin-right: 12px;
+}
+
+.landing__bottom--text {
+  margin-right: 8px;
+  text-decoration: underline;
+  color: #616161;
+  transition: opacity 300ms;
+}
+
+.landing__bottom--text:hover {
+  opacity: 0.65;
+}
+
+.landing__bottom--text:hover + .landing__bottom--arrow {
+  transform: translateX(8px);
+}
+
+.landing__bottom--arrow {
+  display: flex;
+  transition: transform 300ms;
+}
+
+.landing__bottom--arrow img {
+  width: 18px;
+  height: 18px;
+}
+
+@media (max-width: 1000px) {
+  .button {
+    height: 48px;
+    font-size: 14px;
+  }
+
+  .landing__wrapper {
+    flex-direction: column;
+    gap: 64px;
+  }
+
+  .landing__left,
+  .landing__right {
+    max-width: 480px;
+    width: 100%;
+  }
+
+  .landing__button {
+    height: 64px;
+  }
+}
+
+@media (max-width: 568px) {
+  #landing {
+    padding-top: 0px;
+  }
+
+  .contact__button {
+    display: none;
+  }
+
+  .logo__mask {
+    max-width: 88px;
+  }
+
+  .landing__title {
+    font-size: 28px;
+    line-height: 48px;
+  }
+
+  .landing__button--wrapper {
+    flex-direction: column;
+    align-items: start;
+    gap: 16px;
+  }
+
+  .landing__button {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .landing__list--text {
+    font-size: 14px;
+  }
+
+  .landing__bottom--text {
+    font-size: 14px;
+  }
+}
