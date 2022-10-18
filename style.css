@@ -49,8 +49,7 @@ ul {
 }
 
 #landing {
-  min-height: calc(100vh - 88px);
-  padding-top: 24px;
+  padding: 24px 0;
 }
 
 .nav {
@@ -63,7 +62,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
   height: 100%;
   padding: 0 24px;
@@ -252,6 +251,10 @@ ul {
 }
 
 @media (max-width: 568px) {
+  .nav {
+    height: 72px;
+  }
+
   .contact__button {
     display: none;
   }
