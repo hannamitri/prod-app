@@ -59,11 +59,18 @@ button {
   text-decoration: underline;
 }
 
+.top__right--circle {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
 .section__title {
   font-size: 40px;
   font-weight: 600;
   line-height: 48px;
   margin-bottom: 16px;
+  color: #242424;
 }
 
 .line {
@@ -436,7 +443,8 @@ button {
 
 /* EXPLANATION */
 #explanation {
-  padding: 40px 0;
+  padding: 120px 0;
+  position: relative;
 }
 
 .explanation__wrapper {
@@ -575,6 +583,8 @@ button {
 
 #faq {
   background-color: #f5f5f5;
+  padding: 120px 0 56px;
+  position: relative;
 }
 
 .faq__wrapper {
@@ -583,7 +593,7 @@ button {
 }
 
 .faq__right {
-  min-width: 600px;
+  width: 50%;
 }
 
 .faq__title {
@@ -614,6 +624,220 @@ button {
 
 .faq__contact--text {
   color: #616161;
+  font-size: 14px;
+}
+
+.faq__right--question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+  border-bottom: 2px solid #d1d1d1;
+  cursor: pointer;
+}
+
+.faq__right--question-title {
+  font-size: 24px;
+  color: #424242;
+}
+
+/* COMPANIES */
+.companies__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.companies__img--mask {
+  display: flex;
+  align-items: center;
+}
+
+.companies__line {
+  width: 1px;
+  background-color: #d1d1d1;
+}
+
+/* CTA */
+#cta {
+  padding: 80px 0;
+  background-color: #f5f5f5;
+}
+
+.cta__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cta__left {
+  max-width: 524px;
+}
+
+.cta__title {
+  font-size: 48px;
+  line-height: 56px;
+  position: relative;
+}
+
+.cta__arrow--mask {
+  display: flex;
+  position: absolute;
+  bottom: -16px;
+  left: 90%;
+}
+
+.cta__right {
+  background-color: white;
+  max-width: 400px;
+  padding: 40px;
+  border-radius: 16px;
+}
+
+.cta__right--price-wrapper {
+  width: 72px;
+  height: 72px;
+  background-color: #5cc892;
+  color: white;
+  font-weight: 600;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.cta__right--price span {
+  font-size: 24px;
+}
+
+.cta__right--title {
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.cta__right--text {
+  font-size: 14px;
+  color: #242424;
+  margin-bottom: 32px;
+}
+
+.cta__right--text b {
+  font-weight: 600;
+}
+
+.cta__right--downloads-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.cta__right--downloads-text {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* FOOTER */
+#footer {
+  padding: 56px 0;
+  background-color: #242424;
+  color: white;
+}
+
+.footer__link--wrapper {
+  opacity: 0.9;
+}
+
+.footer__top--wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  padding-bottom: 32px;
+  margin-bottom: 40px;
+}
+
+.footer__block {
+  z-index: 1;
+}
+
+.footer__link--title {
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.footer__social--link-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.footer__social--link {
+  display: flex;
+}
+
+.footer__link {
+  margin-bottom: 12px;
+  line-height: 1;
+}
+
+.footer__social--text {
+  margin-bottom: 4px;
+}
+
+.footer__social--text b {
+  font-weight: 500;
+}
+
+.footer__review--wrapper {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.footer__social--img-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer__social--img {
+  display: flex;
+}
+
+.footer__copyright--wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__payment--icon {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer__shape--mask {
+  display: flex;
+  position: absolute;
+  top: -40px;
+  left: -64px;
+}
+
+.footer__bottom--wrapper {
+  background-color: #5cc892;
+  color: #242424;
+  height: 72px;
+  display: flex;
+  align-items: center;
+}
+
+.footer__bottom {
+  display: flex;
+  gap: 16px;
+  font-weight: 500;
   font-size: 14px;
 }
 
