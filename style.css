@@ -316,7 +316,8 @@ button {
 }
 
 .data__line {
-  border: 1px solid #d1d1d1;
+  width: 1px;
+  background-color: #d1d1d1;
 }
 
 .data__title {
@@ -465,6 +466,155 @@ button {
 #testimonials {
   padding: 40px 0;
   background-color: #f5f5f5;
+}
+
+.testimonials__title {
+  max-width: 360px;
+  margin-bottom: 32px;
+}
+
+.testimonials__card--wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.testimonials__img--mask {
+  display: flex;
+  background-color: white;
+  width: fit-content;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+.testimonials__sub--title-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 56px;
+  font-weight: 600;
+}
+
+.testimonials__card {
+  background-color: white;
+  border: 1px solid #d1d1d1;
+  padding: 20px;
+  border-radius: 8px;
+  grid-auto-rows: min-content;
+}
+
+.testimonials__stars--wrapper {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 16px;
+}
+
+.testimonials__card--title {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  margin-bottom: 8px;
+}
+
+.testimonials__card--text {
+  color: #424242;
+  margin-bottom: 16px;
+}
+
+.testimonials__name {
+  font-weight: 600;
+  color: #424242;
+}
+
+.testimonials__job--role {
+  font-size: 14px;
+  color: #616161;
+}
+
+/* PROCESS */
+#process {
+  padding: 56px 0;
+}
+
+.process__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.process__title {
+  color: #242424;
+  margin-bottom: 136px;
+}
+
+.process__item--number {
+  font-size: 96px;
+  line-height: 1;
+}
+
+.process__item--top {
+  margin-bottom: 24px;
+}
+
+.process__item {
+  max-width: 200px;
+  color: #242424;
+}
+
+.process__line {
+  width: 1px;
+  background-color: #d1d1d1;
+}
+
+.process__item--text {
+  color: #242424;
+}
+
+.process__item--text b {
+  font-weight: 600;
+}
+
+#faq {
+  background-color: #f5f5f5;
+}
+
+.faq__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.faq__right {
+  min-width: 600px;
+}
+
+.faq__title {
+  margin-bottom: 48px;
+}
+
+.faq__contact--wrapper {
+  display: flex;
+  gap: 12px;
+}
+
+.faq__contact--icon-mask {
+  display: flex;
+  background-color: white;
+  border-radius: 50%;
+  height: fit-content;
+  padding: 12px;
+}
+
+.faq__contact--icon-mask img {
+  width: 20px;
+  height: 20px;
+}
+
+.faq__contact--email {
+  color: #242424;
+}
+
+.faq__contact--text {
+  color: #616161;
+  font-size: 14px;
 }
 
 @media (max-width: 1000px) {
