@@ -142,6 +142,7 @@ button {
   display: flex;
   align-items: center;
   gap: 24px;
+  margin-bottom: 64px;
 }
 
 .landing__left {
@@ -261,17 +262,36 @@ button {
   height: 18px;
 }
 
+.companies__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+}
+
+.companies__top--title {
+  color: #616161;
+  width: 100%;
+  max-width: 100px;
+}
+
+.companies__top--wrapper {
+  width: 100%;
+  max-width: 1000px;
+}
+
 /* QUOTE */
 #quote {
   background-color: #242424;
   color: white;
+  padding: 32px 0;
 }
 
 .quote__wrapper {
   text-align: center;
   max-width: 628px;
   margin: 0 auto;
-  padding: 40px 0;
+  padding: 0 24px;
 }
 
 .quote__title {
@@ -356,6 +376,7 @@ button {
 .overview__wrapper {
   display: flex;
   justify-content: space-between;
+  gap: 32px;
 }
 
 .overview__left {
@@ -409,6 +430,10 @@ button {
   bottom: 0;
 }
 
+.overview__circle img {
+  width: 100%;
+}
+
 /* CONTROL */
 #control {
   padding: 40px 0;
@@ -417,6 +442,7 @@ button {
 .control__wrapper {
   display: flex;
   justify-content: space-between;
+  gap: 32px;
 }
 
 .control__img--wrapper {
@@ -441,6 +467,11 @@ button {
   display: flex;
 }
 
+.control__img--mask img {
+  width: 100%;
+  max-width: 400px;
+}
+
 /* EXPLANATION */
 #explanation {
   padding: 120px 0;
@@ -450,10 +481,12 @@ button {
 .explanation__wrapper {
   display: flex;
   justify-content: space-between;
+  gap: 64px;
 }
 
 .explanation__left {
   max-width: 320px;
+  z-index: 1;
 }
 
 .explanation__right {
@@ -468,6 +501,7 @@ button {
 .explanation__list--text {
   font-weight: 400;
   color: black;
+  text-align: left;
 }
 
 /* TESTIMONIALS */
@@ -547,6 +581,7 @@ button {
 .process__wrapper {
   display: flex;
   justify-content: space-between;
+  gap: 16px;
 }
 
 .process__title {
@@ -646,11 +681,16 @@ button {
 .companies__wrapper {
   display: flex;
   justify-content: space-between;
+  gap: 8px;
 }
 
 .companies__img--mask {
   display: flex;
   align-items: center;
+}
+
+.companies__img--mask img {
+  width: 100%;
 }
 
 .companies__line {
@@ -668,6 +708,7 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 32px;
 }
 
 .cta__left {
@@ -728,6 +769,7 @@ button {
 
 .cta__right--downloads-wrapper {
   display: flex;
+  gap: 8px;
   justify-content: space-between;
   align-items: flex-end;
 }
@@ -836,6 +878,7 @@ button {
 
 .footer__bottom {
   display: flex;
+  justify-content: center;
   gap: 16px;
   font-weight: 500;
   font-size: 14px;
@@ -864,9 +907,149 @@ button {
   .landing__button {
     height: 64px;
   }
+
+  .overview__wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+  }
+
+  .overview__left {
+    max-width: 600px;
+  }
+
+  .testimonials__card--wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .faq__right--question-title {
+    font-size: 20px;
+  }
+
+  .cta__wrapper {
+    flex-direction: column;
+  }
+
+  .cta__arrow--mask {
+    display: none;
+  }
 }
 
-@media (max-width: 568px) {
+@media (max-width: 768px) {
+  .cta__button {
+    height: 48px;
+    margin: 0;
+  }
+
+  #overview,
+  #control,
+  #explanation,
+  #testimonials,
+  #process,
+  #faq,
+  #cta,
+  #footer {
+    padding: 32px 0;
+  }
+
+  .overview__wrapper {
+    text-align: center;
+  }
+
+  .overview__right--block {
+    width: 100%;
+  }
+
+  .overview__right--icon {
+    justify-content: center;
+  }
+
+  .overview__right--block-wrapper {
+    max-width: 350px;
+  }
+
+  .control__wrapper {
+    justify-content: center;
+  }
+
+  .control__text--wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .control__img--wrapper {
+    display: none;
+  }
+
+  #control .button {
+    margin: unset;
+  }
+
+  .explanation__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .explanation__left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .process__title {
+    margin-bottom: 64px;
+  }
+
+  .process__item--number {
+    font-size: 72px;
+  }
+
+  .testimonials__card--wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonials__title {
+    margin: 0 auto 32px;
+  }
+
+  .testimonials__sub--title-wrapper {
+    justify-content: center;
+    font-size: 14px;
+  }
+
+  .quote__icon {
+    display: none;
+  }
+
+  .faq__wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+  }
+
+  .faq__title {
+    margin-bottom: 16px;
+  }
+
+  .faq__right {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .footer__top--wrapper {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .overview__left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 576px) {
   .nav {
     height: 72px;
   }
@@ -881,6 +1064,15 @@ button {
 
   .logo__mask {
     max-width: 88px;
+  }
+
+  .quote__title {
+    font-size: 24px;
+  }
+
+  .quote__text {
+    font-size: 18px;
+    margin-bottom: 24px;
   }
 
   .landing__title {
@@ -905,6 +1097,80 @@ button {
 
   .landing__bottom--text {
     font-size: 14px;
+  }
+
+  .companies__top {
+    flex-direction: column;
+  }
+
+  .companies__wrapper {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .companies__img--mask {
+    justify-content: center;
+  }
+
+  .companies__img--mask img {
+    width: unset;
+  }
+
+  .control__text--wrapper {
+    max-width: 350px;
+    text-align: center;
+  }
+
+  #control .button {
+    margin: 0 auto;
+  }
+
+  .explanation__wrapper {
+    text-align: center;
+  }
+
+  .testimonials__card--title {
+    font-size: 20px;
+  }
+
+  .testimonials__card--text {
+    font-size: 14px;
+  }
+
+  .testimonials__name {
+    font-size: 14px;
+  }
+
+  .testimonials__job--role {
+    font-size: 12px;
+  }
+
+  .faq__right--question-title {
+    font-size: 16px;
+  }
+
+  .footer__copyright--wrapper {
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+  }
+
+  .footer__bottom {
+    font-size: 12px;
+  }
+
+  .process__wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .process__item--top {
+    margin: 0;
+  }
+
+  .cta__right {
+    padding: 24px;
   }
 }
 
@@ -994,6 +1260,10 @@ button {
 }
 
 @media (max-width: 768px) {
+  .line {
+    margin: 0 auto 16px;
+  }
+
   .container {
     padding: 32px 0;
   }
